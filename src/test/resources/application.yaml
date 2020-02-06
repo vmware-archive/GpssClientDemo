@@ -1,0 +1,50 @@
+logging:
+  file: GPSSDemoApp.log
+  level:
+    org.springframework: ERROR
+    io.pivotal: DEBUG 
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    
+spring:
+  application:
+    name: GPSS_Demo
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        
+  datasource:
+    url: jdbc:mysql://localhost:3306/gpss_meta
+    username: gpss
+    password: pgrocks!
+        
+gpss:
+  gpsshost: 
+  gpssport: 
+  gphost: 
+  gpport: 
+  gprole: 
+  gppass: 
+  gpdatabase: 
+  gpschema: 
+  gptable: 
+  runmode: 
+  ingestbatch: 
+
+#Sample options
+#  gpsshost: 192.168.68.121
+#  gpssport: 5000
+#  gphost: 192.168.68.121
+#  gpport: 5432
+#  gprole: sridhar
+#  gppass: gprocks@2020
+#  gpdatabase: gpdemo
+#  gpschema: gpss_demo
+#  gptable: simpleseries_1
+#  runmode: ingest
+#  #runmode: verifyenv
+#  ingestbatch: 1000
+  
