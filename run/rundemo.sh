@@ -2,7 +2,7 @@
 #please change the gpsshost and gphost related entries in json below to match your environment.
 #Please change the below path to match your environment.
 
-GPSS_DEMO_HOME=/Users/sridharpaladugu/DEV/GPSS-Demo/demo
+GPSS_DEMO_HOME=/Users/myhome/DEV/GPSS-Demo/demo
 
 WORK_DIR=$GPSS_DEMO_HOME/run
 
