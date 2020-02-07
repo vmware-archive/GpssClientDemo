@@ -56,7 +56,8 @@ Also the gpss.proto file is used to build the automated code generation for gRpc
 
 ### Running the client
 I packaged a shell script to run the spring boot application. Please navigate to the folder ``` GpssClientDemo/RUN ```.
-Please edit the rundemo.sh file. This file looks as below;
+Please edit the rundemo.sh file. This file looks as below. 
+####Before running the script please create folder ```GpssClientDemo/run/log```
 ```
 #!/bin/sh
 #please change the gpsshost and gphost related entries in json below to match your environment.
