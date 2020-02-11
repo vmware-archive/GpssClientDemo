@@ -17,9 +17,9 @@ spring:
         format_sql: true
         
   datasource:
-    url: jdbc:mysql://localhost:3306/gpss_meta
-    username: gpss
-    password: pgrocks!
+    url: jdbc:mysql://myhost:3306/gpss_meta
+    username: 
+    password: 
         
 gpss:
   gpsshost: 
@@ -33,6 +33,8 @@ gpss:
   gptable: 
   runmode: 
   ingestbatch: 
+  errorpercentage: 10
+  errorlimit: 10
 #Sample options
 #  gpsshost: 192.168.68.121
 #  gpssport: 5000

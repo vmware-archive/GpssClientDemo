@@ -17,6 +17,9 @@ public class ApplicationProperties {
 	String gppass;
 	String runMode;
 	int ingestBatch;
+	int  errorPercentage;
+	int errorLimit;
+	
 	public String getGpssHost() {
 		return gpssHost;
 	}
@@ -82,6 +85,18 @@ public class ApplicationProperties {
 	}
 	public void setIngestBatch(int ingestBatch) {
 		this.ingestBatch = ingestBatch;
+	}
+	public int getErrorPercentage() {
+		return errorPercentage;
+	}
+	public void setErrorPercentage(int errorPercentage) {
+		this.errorPercentage = errorPercentage;
+	}
+	public int getErrorLimit() {
+		return errorLimit;
+	}
+	public void setErrorLimit(int errorLimit) {
+		this.errorLimit = errorLimit;
 	}
 	
 }

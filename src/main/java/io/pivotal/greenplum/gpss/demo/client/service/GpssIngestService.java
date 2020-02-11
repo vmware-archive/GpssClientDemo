@@ -190,8 +190,8 @@ public class GpssIngestService {
 	}
 	
 	private void openTableForWrite() {
-		Integer errLimit = 50;
-		Integer errPct = 50;
+		Integer errLimit = props.getErrorLimit();
+		Integer errPct = props.getErrorPercentage();
 		// create an insert option builder
 		InsertOption iOpt = InsertOption.newBuilder()
 		    .setErrorLimitCount(errLimit)
